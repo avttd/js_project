@@ -25,7 +25,7 @@ answers[1] = prompt("Вопрос 2?", ""); console.log(answers[1]);
 answers[2] = prompt("Вопрос 3?", ""); console.log(answers[2]);
 
 // IF
-const num = 50;
+let num = 50;
 
 if (num < 50) {
     console.log("Error");
@@ -36,11 +36,11 @@ if (num < 50) {
 }
 
 // тернарный оператор
-const num = 50;
+num = 50;
 (num === 50) ? console.log("OK!") : console.log("Error");
 
 // SWITCH
-const num = 51;
+num = 51;
 switch (num) {
     case 49: 
         console.log("Error");
@@ -57,13 +57,13 @@ switch (num) {
 }
 
 // ЦИКЛЫ
-let num = 50;
+num = 50;
 while ( num < 55) {
     console.log(num);
     num++;
 }
 
-let num = 50;
+num = 50;
 do {
     console.log(num);
     num++;
@@ -78,3 +78,15 @@ for (let i = 1; i < 8; i++) {
     console.log(i);
 }
 
+// Функции
+function showFirstMessage() {     //имя функции - глагол с припиской, что функция делает
+    console.log("Hello World!");
+}
+showFirstMessage();
+
+
+function showFirstMessage(text) {     //имя функции - глагол с припиской, что функция делает
+    console.log(text);
+}
+
+showFirstMessage("Hello World!");
